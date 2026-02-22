@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChangeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ToUIScene()
     {
-        
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToMainMenue()
     {
-        
+        SceneManager.LoadScene("Menue", LoadSceneMode.Single);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
+
