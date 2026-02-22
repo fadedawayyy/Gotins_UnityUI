@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class ImageChangeScript : MonoBehaviour
 {
     public GameObject imageField;
-    public Text descriptionText; // Add reference to Text UI component
+    public Text descriptionText;
     public Sprite[] soriteArray;
-    public string[] descriptions; // Add array for descriptions
+    public string[] descriptions;
 
     public void Dropdown(int index)
     {
