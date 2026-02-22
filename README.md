@@ -6,4 +6,6 @@ Pd projekts
 - [ ]Dizainu taisišana
 
 
-!![image](https://github.com/user-attachments/assets/033d76d9-1aa8-4ca7-8fed-cf4800bafa0d)
+![image](https://github.com/user-attachments/assets/8ad6b122-d101-40b5-9ca5-07657026af3e)
+
+
