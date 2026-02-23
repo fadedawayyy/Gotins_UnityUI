@@ -207,7 +207,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 943426314}
+        m_TargetAssemblyTypeName: ImageChangeScript, Assembly-CSharp
+        m_MethodName: ToggleDiamond
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254347365}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &11430244
 GameObject:
@@ -413,6 +437,7 @@ GameObject:
   - component: {fileID: 43083097}
   - component: {fileID: 43083099}
   - component: {fileID: 43083098}
+  - component: {fileID: 43083100}
   m_Layer: 5
   m_Name: Diamond  Chestplate
   m_TagString: Untagged
@@ -477,6 +502,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43083096}
   m_CullTransparentMesh: 1
+--- !u!114 &43083100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43083096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &73570879
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +527,7 @@ GameObject:
   - component: {fileID: 73570880}
   - component: {fileID: 73570882}
   - component: {fileID: 73570881}
+  - component: {fileID: 73570883}
   m_Layer: 5
   m_Name: Diamond boots
   m_TagString: Untagged
@@ -552,6 +592,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73570879}
   m_CullTransparentMesh: 1
+--- !u!114 &73570883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73570879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &75142654
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,8 +653,9 @@ GameObject:
   - component: {fileID: 104807208}
   - component: {fileID: 104807210}
   - component: {fileID: 104807209}
+  - component: {fileID: 104807211}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Gold Boots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,6 +718,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104807207}
   m_CullTransparentMesh: 1
+--- !u!114 &104807211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104807207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &143375862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1131,7 @@ GameObject:
   - component: {fileID: 205129645}
   - component: {fileID: 205129646}
   m_Layer: 5
-  m_Name: Toggle Leather
+  m_Name: ToggleLeather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1135,7 +1204,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 943426314}
+        m_TargetAssemblyTypeName: ImageChangeScript, Assembly-CSharp
+        m_MethodName: ToggleLeather
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254347365}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &212864482
 GameObject:
@@ -2028,18 +2121,18 @@ RectTransform:
   - {fileID: 1742596241}
   - {fileID: 1412731360}
   - {fileID: 153265313}
-  - {fileID: 1874218933}
-  - {fileID: 104807208}
-  - {fileID: 612742219}
-  - {fileID: 2101511249}
-  - {fileID: 487060479}
-  - {fileID: 2131487121}
-  - {fileID: 971712992}
-  - {fileID: 1286982501}
-  - {fileID: 806347335}
   - {fileID: 887629934}
+  - {fileID: 971712992}
+  - {fileID: 2101511249}
+  - {fileID: 1874218933}
   - {fileID: 420260187}
+  - {fileID: 1286982501}
+  - {fileID: 487060479}
+  - {fileID: 104807208}
   - {fileID: 783520744}
+  - {fileID: 806347335}
+  - {fileID: 2131487121}
+  - {fileID: 612742219}
   - {fileID: 1164866621}
   - {fileID: 43083097}
   - {fileID: 819535904}
@@ -2068,6 +2161,96 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &337329975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337329976}
+  - component: {fileID: 337329978}
+  - component: {fileID: 337329977}
+  - component: {fileID: 337329979}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &337329976
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337329975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1412731360}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -222.3, y: 181.27583}
+  m_SizeDelta: {x: 48.2338, y: 41.9112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &337329977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337329975}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &337329978
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337329975}
+  m_CullTransparentMesh: 1
+--- !u!114 &337329979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337329975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78664f6e2efed0e4c9e5141584077379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotType: 0
+  currentItem: {fileID: 0}
 --- !u!1 &337570574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,8 +2511,9 @@ GameObject:
   - component: {fileID: 420260187}
   - component: {fileID: 420260189}
   - component: {fileID: 420260188}
+  - component: {fileID: 420260190}
   m_Layer: 5
-  m_Name: Image (14)
+  m_Name: Gold Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2392,6 +2576,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420260186}
   m_CullTransparentMesh: 1
+--- !u!114 &420260190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420260186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &442886956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,8 +2822,9 @@ GameObject:
   - component: {fileID: 487060479}
   - component: {fileID: 487060481}
   - component: {fileID: 487060480}
+  - component: {fileID: 487060482}
   m_Layer: 5
-  m_Name: Image (10)
+  m_Name: Gold Leggins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2687,6 +2886,95 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487060478}
+  m_CullTransparentMesh: 1
+--- !u!114 &487060482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487060478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
+--- !u!1 &495473794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495473795}
+  - component: {fileID: 495473797}
+  - component: {fileID: 495473796}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &495473795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495473794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1412731360}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -222.3, y: 133.1}
+  m_SizeDelta: {x: 48.2338, y: 41.9112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &495473796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495473794}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &495473797
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495473794}
   m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
@@ -3092,8 +3380,9 @@ GameObject:
   - component: {fileID: 612742219}
   - component: {fileID: 612742221}
   - component: {fileID: 612742220}
+  - component: {fileID: 612742222}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Iron Boots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3156,6 +3445,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612742218}
   m_CullTransparentMesh: 1
+--- !u!114 &612742222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612742218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &672953172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,8 +3724,9 @@ GameObject:
   - component: {fileID: 783520744}
   - component: {fileID: 783520746}
   - component: {fileID: 783520745}
+  - component: {fileID: 783520747}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Iron Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3485,6 +3789,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783520743}
   m_CullTransparentMesh: 1
+--- !u!114 &783520747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783520743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &795974957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,8 +3893,9 @@ GameObject:
   - component: {fileID: 806347335}
   - component: {fileID: 806347337}
   - component: {fileID: 806347336}
+  - component: {fileID: 806347338}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Iron Chestplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3639,6 +3958,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806347334}
   m_CullTransparentMesh: 1
+--- !u!114 &806347338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806347334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &811233897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +4073,7 @@ GameObject:
   - component: {fileID: 819535904}
   - component: {fileID: 819535906}
   - component: {fileID: 819535905}
+  - component: {fileID: 819535907}
   m_Layer: 5
   m_Name: Diamond Leggins
   m_TagString: Untagged
@@ -3804,6 +4138,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819535903}
   m_CullTransparentMesh: 1
+--- !u!114 &819535907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819535903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &887629933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,8 +4163,10 @@ GameObject:
   - component: {fileID: 887629934}
   - component: {fileID: 887629936}
   - component: {fileID: 887629935}
+  - component: {fileID: 887629937}
+  - component: {fileID: 887629938}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: LeatherHelmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3879,6 +4229,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887629933}
   m_CullTransparentMesh: 1
+--- !u!114 &887629937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887629933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
+--- !u!114 &887629938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887629933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56030375e4fdb240a8618d07be713d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armorType: 0
 --- !u!1 &900860723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +4303,7 @@ GameObject:
   - component: {fileID: 943426313}
   - component: {fileID: 943426314}
   - component: {fileID: 943426315}
+  - component: {fileID: 943426316}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -3960,6 +4338,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8503778e120d1c24392aa6489ea0dd19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeatherHelmet: {fileID: 887629933}
+  LeatherChestplate: {fileID: 971712991}
+  LeatherLeggins: {fileID: 2101511248}
+  LeatherBoots: {fileID: 1874218932}
+  IronHelmet: {fileID: 783520743}
+  IronChestplate: {fileID: 806347334}
+  IronLeggins: {fileID: 2131487120}
+  IronBoots: {fileID: 612742218}
+  GoldHelmet: {fileID: 420260186}
+  GoldChestplate: {fileID: 1286982500}
+  GoldLeggins: {fileID: 487060478}
+  GoldBoots: {fileID: 104807207}
+  DiamondHelmet: {fileID: 1164866620}
+  DiamondChestplate: {fileID: 43083096}
+  DiamondLeggins: {fileID: 819535903}
+  DiamondBoots: {fileID: 73570879}
   imageField: {fileID: 153265312}
   descriptionText: {fileID: 16899492}
   soriteArray:
@@ -3994,6 +4388,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eace69e21916024b8347881300567a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &943426316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943426312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &951744968
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,8 +4488,9 @@ GameObject:
   - component: {fileID: 971712992}
   - component: {fileID: 971712994}
   - component: {fileID: 971712993}
+  - component: {fileID: 971712995}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: LeatherChestplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4144,6 +4553,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971712991}
   m_CullTransparentMesh: 1
+--- !u!114 &971712995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971712991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &1002262734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4459,7 +4882,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 943426314}
+        m_TargetAssemblyTypeName: ImageChangeScript, Assembly-CSharp
+        m_MethodName: ToggleIron
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254347365}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1161294239
 GameObject:
@@ -4598,6 +5045,7 @@ GameObject:
   - component: {fileID: 1164866621}
   - component: {fileID: 1164866623}
   - component: {fileID: 1164866622}
+  - component: {fileID: 1164866624}
   m_Layer: 5
   m_Name: Diamond Helmet
   m_TagString: Untagged
@@ -4662,6 +5110,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164866620}
   m_CullTransparentMesh: 1
+--- !u!114 &1164866624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164866620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &1178259827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,8 +5444,9 @@ GameObject:
   - component: {fileID: 1286982501}
   - component: {fileID: 1286982503}
   - component: {fileID: 1286982502}
+  - component: {fileID: 1286982504}
   m_Layer: 5
-  m_Name: Image (12)
+  m_Name: Gold Chestplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5046,6 +5509,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286982500}
   m_CullTransparentMesh: 1
+--- !u!114 &1286982504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286982500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &1289329930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,7 +5706,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 337329976}
+  - {fileID: 1613065932}
+  - {fileID: 1742162137}
+  - {fileID: 495473795}
   m_Father: {fileID: 320714203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5503,6 +5984,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571433161}
+  m_CullTransparentMesh: 1
+--- !u!1 &1613065931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1613065932}
+  - component: {fileID: 1613065934}
+  - component: {fileID: 1613065933}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1613065932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613065931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1412731360}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -222.3, y: 84.9}
+  m_SizeDelta: {x: 48.2338, y: 41.9112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1613065933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613065931}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1613065934
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613065931}
   m_CullTransparentMesh: 1
 --- !u!1 &1625765338
 GameObject:
@@ -5879,6 +6435,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705544139}
   m_CullTransparentMesh: 1
+--- !u!1 &1742162136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742162137}
+  - component: {fileID: 1742162139}
+  - component: {fileID: 1742162138}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1742162137
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742162136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1412731360}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -222.3, y: 35.3}
+  m_SizeDelta: {x: 48.2338, y: 41.9112}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1742162138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742162136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1742162139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742162136}
+  m_CullTransparentMesh: 1
 --- !u!1 &1742596240
 GameObject:
   m_ObjectHideFlags: 0
@@ -6151,8 +6782,9 @@ GameObject:
   - component: {fileID: 1874218933}
   - component: {fileID: 1874218935}
   - component: {fileID: 1874218934}
+  - component: {fileID: 1874218936}
   m_Layer: 5
-  m_Name: Imagee
+  m_Name: LeatherBoots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6215,6 +6847,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874218932}
   m_CullTransparentMesh: 1
+--- !u!114 &1874218936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874218932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &1935594253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,8 +7748,9 @@ GameObject:
   - component: {fileID: 2101511249}
   - component: {fileID: 2101511251}
   - component: {fileID: 2101511250}
+  - component: {fileID: 2101511252}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: LeatherLeggins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7166,6 +7813,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101511248}
   m_CullTransparentMesh: 1
+--- !u!114 &2101511252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101511248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1 &2117129357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7250,7 +7911,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 943426314}
+        m_TargetAssemblyTypeName: ImageChangeScript, Assembly-CSharp
+        m_MethodName: ToggleGold
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254347365}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &2120797941
 GameObject:
@@ -7487,8 +8172,9 @@ GameObject:
   - component: {fileID: 2131487121}
   - component: {fileID: 2131487123}
   - component: {fileID: 2131487122}
+  - component: {fileID: 2131487124}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Iron Leggins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7551,6 +8237,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131487120}
   m_CullTransparentMesh: 1
+--- !u!114 &2131487124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131487120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0572b804dd4091048a902ac8437f8483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 0}
+  canva: {fileID: 320714202}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
