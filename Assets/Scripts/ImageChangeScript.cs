@@ -9,6 +9,24 @@ public class ImageChangeScript : MonoBehaviour
     public Text descriptionText;
     public Sprite[] soriteArray;
     public string[] descriptions;
+    public GameObject GrowthSlider;
+    public GameObject WidthSlider;
+
+    public void ChangeGrowth()
+    {
+        float currentGrowth = GrowthSlider.GetComponent<Slider>().value;
+        Vector3 scale = imageField.transform.localScale;
+        scale.y = currentGrowth;
+        imageField.transform.localScale = scale;
+    }
+
+    public void ChangeWidth()
+    {
+        float currentWidth = WidthSlider.GetComponent<Slider>().value;
+        Vector3 scale = imageField.transform.localScale;
+        scale.x = currentWidth;
+        imageField.transform.localScale = scale;
+    }
 
     public void Dropdown(int index)
     {
