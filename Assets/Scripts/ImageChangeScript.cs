@@ -27,6 +27,7 @@ public class ImageChangeScript : MonoBehaviour
     public string[] descriptions;
     public GameObject GrowthSlider;
     public GameObject WidthSlider;
+    public int currentIndex = 0;
 
     public void ChangeGrowth()
     {
@@ -46,9 +47,13 @@ public class ImageChangeScript : MonoBehaviour
 
     public void Dropdown(int index)
     {
+
+        currentIndex = index;
+
         if(index == 0) {
             imageField.GetComponent<Image>().sprite = soriteArray[0];
             descriptionText.text = descriptions[0];
+
         }
         else if (index == 1) {
             imageField.GetComponent<Image>().sprite = soriteArray[1];
